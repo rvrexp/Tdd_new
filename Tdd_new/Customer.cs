@@ -8,9 +8,15 @@ namespace Tdd_new
 {
     public class Customer
     {
-        public int Discount = 15;
+        public int Discount { get; set; }
         public int OrderTotal { get; set; }
         public string GreetMessage { get; set; }
+        public bool IsPlatinum { get; set; }
+        public Customer()
+        {
+            Discount = 15;
+            IsPlatinum = false;
+        }
         public string GreetAndCombineNames(string firstName, string LastName)
         {
             if (string.IsNullOrWhiteSpace(firstName))

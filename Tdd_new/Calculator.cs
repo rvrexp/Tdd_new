@@ -1,5 +1,6 @@
 ﻿namespace Tdd_new
 {
+    //https://xunit.net/docs/comparisons
     public class Calculator
     {
         public List<int> NumberRange = new();
